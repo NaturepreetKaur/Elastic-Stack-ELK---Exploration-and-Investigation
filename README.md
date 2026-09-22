@@ -40,11 +40,11 @@ The query returned 46 matching events, providing a focused dataset for further a
 
 As a SOC Analyst;
 
-1) Correlated source IP and user identity within VPN telemetry.
-2) Examined the event timeline to identify connection patterns and frequency.
-3) Reviewed associated attributes including action, port, protocol, and source country.
-4) Reduced the investigation scope from broader VPN telemetry to username and sourceip specific activity.
-5) Established a focused dataset for subsequent event correlation and investigation.
+- Correlated source IP and user identity within VPN telemetry.
+- Examined the event timeline to identify connection patterns and frequency.
+- Reviewed associated attributes including action, port, protocol, and source country.
+- Reduced the investigation scope from broader VPN telemetry to username and sourceip specific activity.
+- Established a focused dataset for subsequent event correlation and investigation.
 <img width="1351" height="527" alt="elk4" src="https://github.com/user-attachments/assets/aa2f0c8b-dc6f-440f-a150-1ba97090e8ac" />
 
 ## VPN Activity Analysis & User-Based Event Correlation
