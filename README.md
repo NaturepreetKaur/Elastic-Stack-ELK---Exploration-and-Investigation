@@ -32,9 +32,10 @@ As a SOC Analyst;
 <img width="1360" height="594" alt="elk3" src="https://github.com/user-attachments/assets/bcd39745-ce19-447b-a1b4-3ddd44c17e81" />
 ## Query-Based Event Filtering
 
-Applied a structured query in Kibana to isolate VPN connection events associated with a specific source IP address and user account.
-Query: sourceip: 238.163.231.224 AND UserName: "Suleman"
 
+Applied a structured query in Kibana to isolate VPN connection events associated with a specific source IP address and user account.
+
+Query: sourceip: 238.163.231.224 AND UserName: "Suleman"
 The query returned 46 matching events, providing a focused dataset for further analysis.
 
 As a SOC Analyst;
@@ -45,6 +46,9 @@ As a SOC Analyst;
 4) Reduced the investigation scope from broader VPN telemetry to username and sourceip specific activity.
 5) Established a focused dataset for subsequent event correlation and investigation.
 <img width="1351" height="527" alt="elk4" src="https://github.com/user-attachments/assets/aa2f0c8b-dc6f-440f-a150-1ba97090e8ac" />
+## VPN Activity Analysis & User-Based Event Correlation
+
+
 <img width="1366" height="592" alt="elk5" src="https://github.com/user-attachments/assets/e61f644c-55d3-4142-abf3-c449ccec66ff" />
 <img width="1357" height="590" alt="6" src="https://github.com/user-attachments/assets/d636523f-86bd-494f-b8c5-1e53b38a857c" />
 <img width="1361" height="541" alt="7" src="https://github.com/user-attachments/assets/60c998cc-fd9a-4d4a-bd58-b1254da4331a" />
