@@ -5,7 +5,7 @@ The stack consists of three main components:
         **Elasticsearch**– Stores, indexes, and searches data.
         **Logstash** – Collects and processes data from different sources.
         **Kibana** – Provides dashboards and visualizations for analyzing data.
-## Kibana - Log Exploration
+## Log Exploration
 
 Kibana Discover provides an interactive interface for searching and
 analyzing data stored in Elasticsearch.
@@ -16,7 +16,7 @@ selected period.
 This demonstrates how Kibana can turn raw log data into searchable
 information that can support security monitoring and investigation.
 <img width="1146" height="587" alt="elk1" src="https://github.com/user-attachments/assets/8dd914eb-3a2e-490e-b65e-1bcf704a627f" />
-## Kibana - VPN Connection Monitoring
+## VPN Connection Monitoring
 
 This Kibana visualization demonstrates how network connection data can be explored over time. I used fields such as timestamp, action, company, and port to visualize VPN-related activity. From a SOC perspective, this type of visualization can help identify unusual connection patterns, failed attempts, and activity that may require further investigation.
 <img width="1361" height="641" alt="elk2" src="https://github.com/user-attachments/assets/08613aa2-6a94-4e67-8fef-d0552adbffee" />
