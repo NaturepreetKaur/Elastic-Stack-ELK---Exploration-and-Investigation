@@ -49,6 +49,16 @@ As a SOC Analyst;
 ## VPN Activity Analysis & User-Based Event Correlation
 
 
+The Kibana visualization was configured to analyze VPN connection activity over time using a stacked bar chart.
+
+Analysis performed:;
+
+1) Visualized the number of VPN connection events across 12-hour time intervals.
+2) Broke down event volume by top usernames to identify which accounts generated the highest activity.
+3) Reviewed supporting telemetry fields including source IP, source country, action, protocol, and port.
+4) Used the visualization to establish a baseline of user activity and identify unusual spikes or changes in authentication/VPN activity.
+5) This view can support SOC triage by helping analysts pivot from overall event volume to specific user accounts and their associated network activity.
+
 <img width="1366" height="592" alt="elk5" src="https://github.com/user-attachments/assets/e61f644c-55d3-4142-abf3-c449ccec66ff" />
 <img width="1357" height="590" alt="6" src="https://github.com/user-attachments/assets/d636523f-86bd-494f-b8c5-1e53b38a857c" />
 <img width="1361" height="541" alt="7" src="https://github.com/user-attachments/assets/60c998cc-fd9a-4d4a-bd58-b1254da4331a" />
