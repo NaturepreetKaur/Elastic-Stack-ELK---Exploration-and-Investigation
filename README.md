@@ -29,7 +29,7 @@ As a SOC Analyst;
 - Filtered vpn_connections data by Source Country: England
 - Analyzed VPN connection activity over time
 -  Used event volume to identify activity patterns and potential anomalies
--  provides a starting point for further correlation with source IPs, users, authentication events, and timestamps
+-  Provides a starting point for further correlation with source IPs, users, authentication events, and timestamps
 <img width="1360" height="594" alt="elk3" src="https://github.com/user-attachments/assets/bcd39745-ce19-447b-a1b4-3ddd44c17e81" />
 
 ## Query-Based Event Filtering
