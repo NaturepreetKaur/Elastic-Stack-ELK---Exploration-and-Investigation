@@ -5,10 +5,45 @@ The stack consists of three main components:
         **Elasticsearch**– Stores, indexes, and searches data.
         **Logstash** – Collects and processes data from different sources.
         **Kibana** – Provides dashboards and visualizations for analyzing data.
+## Kibana - Log Exploration
 
+Kibana Discover provides an interactive interface for searching and
+analyzing data stored in Elasticsearch.
+In this view, I explored collected log events, examined event fields,
+filtered data, and used the timeline to understand activity over a
+selected period.
+
+This demonstrates how Kibana can turn raw log data into searchable
+information that can support security monitoring and investigation.
 <img width="1146" height="587" alt="elk1" src="https://github.com/user-attachments/assets/8dd914eb-3a2e-490e-b65e-1bcf704a627f" />
+## Kibana - VPN Connection Monitoring
+
+This Kibana visualization demonstrates how network connection data can be explored over time. I used fields such as timestamp, action, company, and port to visualize VPN-related activity. From a SOC perspective, this type of visualization can help identify unusual connection patterns, failed attempts, and activity that may require further investigation.
 <img width="1361" height="641" alt="elk2" src="https://github.com/user-attachments/assets/08613aa2-6a94-4e67-8fef-d0552adbffee" />
+## Filtering VPN Activity by Source Country
+Applied a geographic filter in Kibana to isolate VPN connection events originating from England.This filtering helps a SOC analyst narrow down large volumes of security telemetry and focus on a specific source for further investigation.
+
+As a SOC Analyst;
+
+1) Filtered vpn_connections data by Source Country: England
+2) Analyzed VPN connection activity over time
+3) Used event volume to identify activity patterns and potential anomalies
+4) Provides a starting point for further correlation with source IPs, users, authentication events, and timestamps
 <img width="1360" height="594" alt="elk3" src="https://github.com/user-attachments/assets/bcd39745-ce19-447b-a1b4-3ddd44c17e81" />
+## Query-Based Event Filtering
+
+Applied a structured query in Kibana to isolate VPN connection events associated with a specific source IP address and user account.
+Query: sourceip: 238.163.231.224 AND UserName: "Suleman"
+
+The query returned 46 matching events, providing a focused dataset for further analysis.
+
+As a SOC Analyst;
+
+1) Correlated source IP and user identity within VPN telemetry.
+2) Examined the event timeline to identify connection patterns and frequency.
+3) Reviewed associated attributes including action, port, protocol, and source country.
+4) Reduced the investigation scope from broader VPN telemetry to username and sourceip specific activity.
+5) Established a focused dataset for subsequent event correlation and investigation.
 <img width="1351" height="527" alt="elk4" src="https://github.com/user-attachments/assets/aa2f0c8b-dc6f-440f-a150-1ba97090e8ac" />
 <img width="1366" height="592" alt="elk5" src="https://github.com/user-attachments/assets/e61f644c-55d3-4142-abf3-c449ccec66ff" />
 <img width="1357" height="590" alt="6" src="https://github.com/user-attachments/assets/d636523f-86bd-494f-b8c5-1e53b38a857c" />
