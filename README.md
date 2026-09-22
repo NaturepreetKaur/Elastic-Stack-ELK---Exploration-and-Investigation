@@ -1,4 +1,5 @@
-# Elastic Stack (ELK)
+# Elastic Stack (ELK) - Exploration and Investigation
+This repository documents my hands-on analysis of the Elastic Stack (ELK) from a Security Operations Center (SOC) perspective. The work demonstrates the use of Kibana for security telemetry analysis, query-based event filtering, visualization, temporal analysis, and investigation of network activity. It focuses on applying ELK capabilities to support practical SOC monitoring and investigation workflows.
 ## Overview
 The Elastic Stack, commonly known as ELK, is a collection of tools used to collect, process, search, analyze, and visualize data and logs.
 The stack consists of three main components:
